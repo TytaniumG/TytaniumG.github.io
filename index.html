@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <main>
+        <h2 class="welcome" id="start">// Welcome to my portfolio!</h2>
+        <h2 class="welcome2">// I am currently seeking internship and part-time opportunities</h2>
+        <div class="boxes">
+            <div class="box-intro">
+                <img src="me.jpg" alt="Tyler Gaines" class="profile-image">
+                <h1>Tyler Gaines</h1>
+                <p>/* Software Developer and Cybersecurity Enthusiast */</p>
+                <nav class="social-links">
+                    <a href="https://linkedin.com/in/tyler-gaines" aria-label="LinkedIn" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/TytaniumG" aria-label="GitHub" target="_blank" rel="noopener">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="mailto:tylergaines05@gmail.com" aria-label="Email">
+                        <i class="fa-solid fa-envelope"></i>
+                    </a>
+                </nav>
+            </div>
+            <section class="box-jumplinks">
+                <div class="box-qualifications">
+                    <a href="#qualifications">Qualifications</a>
+                </div>
+                <div class="box-projects">
+                    <a href="#projects">Projects</a>
+                </div>
+                <div class="box-resume">
+                    <a href="#resume">Resume</a>
+                </div>
+            </section>
+            <section class="box-qualifications" id="qualifications">
+                <h2>Qualifications</h2>
+                <hr>
+                <h3>Computer Languages</h3>
+                <div class="box-langs">
+                    <p>C</p>
+                    <p>C++</p>
+                    <p>C#</p>
+                    <p>Java</p>
+                    <p>Python</p>
+                    <p>Assembly</p>
+                    <p>HTML</p>
+                    <p>CSS</p>
+                </div>
+                <h3>Certifications</h3>
+                <div class="box-certs">
+                    <p>CompTIA Security+</p>
+                </div>
+                <h3>Technologies</h3>
+                <div class="box-techs">
+                    <p>Bash</p>
+                    <p>VS Code</p>
+                    <p>MS Office</p>
+                    <p>GitHub</p>
+                </div>
+            </section>
+            <section class="box-projects" id="projects">
+                <h2>Projects</h2>
+                <hr>
+                <div class="project">
+                    <div class="project-header">
+                        <h3>ProjectForge (In Progress)</h3>
+                        <a href="https://github.com/Jsorey4/CS3354_Team3_Project" target="_blank" rel="noopener" aria-label="ProjectForge Repository">
+                            repo<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    <div class="project-stack">
+                        <p>React <i class="devicon-react-original colored"></i></p>
+                        <p>Typescript <i class="devicon-typescript-plain colored"></i></p>
+                        <p>Supabase <i class="devicon-supabase-plain colored"></i></p>
+                        <p>Python <i class="devicon-python-plain colored"></i></p>
+                        <p>Django <i class="devicon-django-plain"></i></p>
+                    </div>
+                    <p>A full-stack project management web app for school, personal, or professional use. Built with a team where I am the security lead responsible for authentication and access control.</p>
+                    <ul>
+                        <li>Team features: calendar scheduling, expense tracking, and role assignment for project members.</li>
+                        <li>Building account creation and management with secure credential handling.</li>
+                        <li>Implementing rate limiting and account lockout to protect against brute-force login attempts.</li>
+                        <li>Designing RBAC so users only reach the features their role allows.</li>
+                        <li>Adding server-side input validation to guard against malformed or malicious input.</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <div class="project-header">
+                    <h3>In-Memory Document Search Engine</h3>
+                    <a href="https://github.com/TytaniumG/document-search-engine" target="_blank" rel="noopener" aria-label="Document Search Engine Repository">
+                            repo<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    </div>
+                    <div class="project-stack">
+                        <p>Java <i class="devicon-java-plain colored"></i></p>
+                    </div>
+                    <p>A search engine that stores documents in memory and answers keyword, prefix, and range queries quickly, built around several coordinated data structures and benchmarked against its theoretical performance.</p>
+                    <ul>
+                        <li>Designed a multi-index document store combining a custom circular buffer, a TreeMap, and a hash-based inverted index.</li>
+                        <li>Achieved O(1) average-case term lookup, O(log n) prefix and range queries, and 1.5µs per term search across 100K documents.</li>
+                        <li>Kept four synchronized data structures consistent through every insert and delete operation.</li>
+                        <li>Benchmarked the search engine against its theoretical performance and optimized it for speed and memory usage.</li>
+                    </ul>
+                </div>
+                <div class="project">
+                    <div class="project-header">
+                    <h3>Gaming PC Build and Configuration</h3>
+                    <a href="https://github.com/TytaniumG" target="_blank" rel="noopener" aria-label="Gaming PC Repository">
+                            repo<i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    </div>
+                    <div class="project-stack">
+                        <p>Windows 11 <i class="devicon-windows8-original colored"></i></p>
+                        <p>AMD <i class="fa-solid fa-microchip"></i></p>
+                    </div>
+                    <p>A high-performance gaming PC that I built from scratch, including selecting components, assembling the system, and configuring the operating system and software.</p>
+                    <ul>
+                        <li>Selected and assembled compatible components: AMD Ryzen 5 7600X3D CPU, AMD Radeon RX 9070 GPU, ASUS TUF Gaming B650-E motherboard, 64GB DDR5 RAM, 1TB SSD, and a 750W power supply</li>
+                        <li>Installed and configured Windows 11, GPU and chipset drivers, and other essential software and keep them all maintained.</li>
+                        <li>Troubleshot the blue screen of death by checking hardware connections (one RAM stick failed).</li>
+                        <li>Troubleshot a game crash after a chipset drivers update by tweaking the settings back to their previous configuration.</li>
+                    </ul>
+                </div>
+            </section>
+            <div class="box-resume" id="resume">
+                <h2>Resume</h2>
+                <hr>
+                <img src="resume.jpg" alt="Resume" class="resume-image">
+                <hr>
+                <a href="RESUME.pdf" download class="download-button"><i class="fa-solid fa-download"></i> Download Resume</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">&copy; 2026 Tyler Gaines. All rights reserved.</p>
+    </footer>
+</body>
+</html>

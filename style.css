@@ -1,0 +1,353 @@
+:root {
+    --bg: #2b2b2b;
+    --txt: #e0c5c5;
+    --boxbg: #202020;
+    --blue: #66c4fa;
+    --lightblue: #36454e;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--txt);
+    font-family: Consolas, sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: min(100%, 1100px);
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: var(--blue);
+    font-weight: bold;
+    margin: 50px 0 10px;
+}
+
+h3 {
+    text-align: center;
+    font-weight: bold;
+    margin: 30px 0 10px 0;
+}
+
+p {
+    font-size: 1rem;
+    margin: 10px 0 0 0;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-color: var(--blue);
+    width: min(100% - 40px, 860px);
+    margin: 20px auto;
+}
+
+li {
+    list-style-type: circle;
+}
+
+.welcome {
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+    color: var(--txt);
+}
+
+.welcome2 {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 30px;
+    color: var(--txt);
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.box-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, 600px);
+    margin: 30px auto 0;
+    background-color: var(--boxbg);
+    border: 2px solid var(--blue);
+    border-radius: 25px;
+    padding: 40px 20px 25px 20px;
+    font-size: 1.2rem;
+}
+
+.box-intro p {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 15px 0 5px;
+}
+
+.social-links {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a i {
+    color: var(--blue);
+    padding: 6px;
+    border: 2px solid var(--blue);
+    border-radius: 50px;
+}
+
+.social-links a:hover i,
+.social-links a:focus-visible i {
+    background-color: var(--blue);
+    color: var(--boxbg);
+}
+
+.box-jumplinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.box-jumplinks > div {
+    display: flex;
+}
+
+.box-jumplinks a {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    background-color: var(--boxbg);
+    color: var(--blue);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.box-jumplinks a:hover, .box-jumplinks a:focus-visible {
+    background-color: var(--blue);
+    color: var(--boxbg);
+}
+
+.box-langs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.boxes > .box-qualifications,
+.boxes > .box-projects,
+.boxes > .box-resume {
+    width: 100%;
+}
+
+.box-langs p {
+    color: var(--blue);
+    background-color: var(--lightblue);
+    padding: 4px 10px;
+    border: 1px solid var(--blue);
+    border-radius: 50px;
+}
+
+.box-certs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 60px;
+}
+
+.box-certs p {
+    color: var(--blue);
+    background-color: var(--lightblue);
+    padding: 4px 10px;
+    border: 1px solid var(--blue);
+    border-radius: 50px;
+}
+
+.box-techs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.box-techs p {
+    color: var(--blue);
+    background-color: var(--lightblue);
+    padding: 4px 10px;
+    border: 1px solid var(--blue);
+    border-radius: 50px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0 10px;
+    width: fit-content;
+    max-width: 100%;
+}
+
+.project-header h3 {
+    margin: 0;
+    text-align: center;
+}
+
+.project-header a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: var(--boxbg);
+    background-color: var(--blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 2px 6px;
+    border: 2px solid transparent;
+    border-radius: 8px;
+}
+
+.project-header a:hover, .project-header a:focus-visible {
+    color: var(--blue);
+    background-color: var(--boxbg);
+    border-color: var(--blue);
+}
+
+.project-stack {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.project-stack p {
+    color: var(--blue);
+    background-color: var(--boxbg);
+    padding: 4px 8px;
+    border: 1px solid var(--blue);
+    border-radius: 50px;
+    font-size: 0.8rem;
+}
+
+.devicon-django-plain {
+    color: #12b677;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: min(100%, 700px);
+    gap: 10px;
+    padding: 20px;
+    background-color: var(--boxbg);
+    margin: 40px auto 50px;
+    border: 2px solid var(--blue);
+    border-radius: 25px;
+}
+
+.resume-image {
+    display: block;
+    margin: 30px auto;
+    max-width: min(100%, 800px);
+    height: auto;
+}
+
+.download-button {
+    display: block;
+    width: fit-content;
+    padding: 10px 15px;
+    background-color: var(--blue);
+    color: var(--boxbg);
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    margin: 0 auto 30px;
+}
+
+.download-button:hover, .download-button:focus-visible {
+    background-color: var(--boxbg);
+    color: var(--blue);
+    border-color: var(--blue);
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--txt);
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+@media (max-width: 600px) {
+    main {
+        padding: 0 12px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        margin-top: 35px;
+    }
+
+    .box-intro {
+        padding: 30px 16px 25px;
+    }
+
+    .box-jumplinks {
+        gap: 10px;
+    }
+
+    .project {
+        padding: 16px;
+        overflow-wrap: anywhere;
+    }
+
+    .project ul {
+        padding-left: 22px;
+    }
+}
