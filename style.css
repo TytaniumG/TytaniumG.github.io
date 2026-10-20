@@ -10,6 +10,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: var(--bg);
@@ -226,7 +230,7 @@ li {
 }
 
 .project-header h3 {
-    margin: 0;
+    margin: 10px 0 0;
     text-align: center;
 }
 
