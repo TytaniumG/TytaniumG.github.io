@@ -170,6 +170,7 @@ li {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 60px;
+    cursor: pointer;
 }
 
 .boxes > .box-qualifications,
@@ -202,12 +203,40 @@ li {
     border-radius: 50px;
 }
 
+.hover-area {
+    position: relative;
+    cursor: pointer;
+}
+
+.pop-up {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    max-width: 80vw;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s;
+}
+
+.hover-area:hover .pop-up,
+.hover-area:focus-within .pop-up {
+    opacity: 1;
+    visibility: visible;
+}
+
 .box-techs {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .box-techs p {
@@ -259,6 +288,7 @@ li {
     flex-wrap: wrap;
     gap: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .project-stack p {
